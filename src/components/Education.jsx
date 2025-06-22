@@ -25,18 +25,18 @@ const Education = () => {
 
   const achievements = [
     {
-      title: "Dean's List",
-      description: "Achieved Dean's List recognition for academic excellence",
+      title: "Google AI Hackathon",
+      description: "Chosen as 1 of 55 students out of 450+ applicants to participate in the Google AI Hackathon, where I collaborated with a team to develop an application utilising Gemini API.",
+      date: "Jun 2025"
+    },
+    {
+      title: "Young Software Engineer Summer",
+      description: "Collaborated with a dedicated team and scrum master in hybrid work to build complete websites. Developed web applications using JavaScript, focusing on creating responsive and user-friendly interfaces.",
       date: "Fall 2023"
     },
     {
-      title: "Programming Competition",
-      description: "3rd place in university programming competition",
-      date: "Spring 2024"
-    },
-    {
-      title: "CS Club Member",
-      description: "Active member of Computer Science Student Association",
+      title: "Technology Spring Week w/ Springpod",
+      description: "Remote program covering software engineering, data science, and web development ceoncepts which included workshops, guest speakers, and hands-on projects.",
       date: "2023 - Present"
     }
   ]
@@ -134,9 +134,9 @@ const Education = () => {
           <div className="mt-12 text-center bg-muted/50 rounded-lg p-8">
             <h3 className="text-xl font-semibold mb-4">Academic Goals</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              I'm focused on maintaining academic excellence while gaining practical experience 
-              through internships and personal projects. My goal is to specialize in software 
-              development and contribute to innovative technology solutions.
+              Focused on maintaining academic excellence while gaining practical experience 
+              through internships and personal projects. I plan on continuing to get involved in my field on-campus as much 
+              as off-campus via events hosted by societies like the Advent of Code (AoC).
             </p>
           </div>
         </div>

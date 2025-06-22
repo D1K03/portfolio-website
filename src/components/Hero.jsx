@@ -1,6 +1,7 @@
 import React from 'react'
 import { Github, Linkedin, Mail, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import pfp from '../assets/images/pfp.jpg';
 
 const Hero = () => {
   return (
@@ -9,8 +10,8 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-4xl font-bold text-primary-foreground">
-              CS
+            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-4xl font-bold text-primary-foreground overflow-hidden">
+              <img src={pfp} alt="PFP"/>
             </div>
           </div>
 
@@ -26,9 +27,9 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            I'm a passionate second-year Computer Science student with a love for creating 
-            innovative solutions through code. I enjoy building web applications, exploring 
-            new technologies, and solving complex problems.
+            Second-Year CS Student at the University of Kent from London with a passion for programming
+            and a love for attending spontaneous tech events and hackathons, where I can explore new technologies
+            and thrive on creativity.
           </p>
 
           {/* CTA Buttons */}

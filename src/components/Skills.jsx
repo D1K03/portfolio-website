@@ -105,34 +105,6 @@ const Skills = () => {
               </div>
             ))}
           </div>
-
-          {/* Additional Skills */}
-          <div className="mt-16">
-            <h3 className="text-2xl font-semibold text-center mb-8">Other Skills</h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="text-center p-6 bg-card rounded-lg border">
-                <Users className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-semibold mb-2">Team Collaboration</h4>
-                <p className="text-sm text-muted-foreground">
-                  Experience working in group projects and hackathons that require collaborative tools
-                </p>
-              </div>
-              <div className="text-center p-6 bg-card rounded-lg border">
-                <BookOpen className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-semibold mb-2">Problem Solving</h4>
-                <p className="text-sm text-muted-foreground">
-                  Strong analytical thinking and debugging skills, cultivated through tutoring, personal projects and coursework
-                </p>
-              </div>
-              <div className="text-center p-6 bg-card rounded-lg border">
-                <Database className="h-8 w-8 text-primary mx-auto mb-3" />
-                <h4 className="font-semibold mb-2">Database Design</h4>
-                <p className="text-sm text-muted-foreground">
-                  Understanding of database concepts and design principles from coursework and personal projects.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

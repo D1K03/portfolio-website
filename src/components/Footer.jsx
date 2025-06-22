@@ -26,19 +26,19 @@ const Footer = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "alex.johnson@email.com",
-      href: "mailto:alex.johnson@email.com"
+      value: "olusakindaniel03@gmail.com",
+      href: "mailto:olusakindaniel03@gmail.com"
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+44 7555388309",
+      href: "tel:+447555388309"
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
-      value: "University City, State",
+      value: "London, United Kingdom",
       href: null
     }
   ]
@@ -53,12 +53,7 @@ const Footer = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main Footer Content */}
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-4">Alex Johnson</h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Computer Science Student passionate about creating innovative solutions 
-              and building the future through technology.
-            </p>
-            
+          
             {/* Social Links */}
             <div className="flex justify-center space-x-6 mb-8">
               {socialLinks.map((social, index) => (
@@ -76,7 +71,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Details */}
-            <div className="space-y-4 mb-8">
+            <div className="mb-8 justify-between flex flex-row">
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-center justify-center gap-4">
                   <div className="w-8 h-8 bg-primary/10 text-primary rounded-full flex items-center justify-center flex-shrink-0">
@@ -112,12 +107,12 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               {/* Copyright */}
               <p className="text-sm text-muted-foreground">
-                © {currentYear} Alex Johnson. All rights reserved.
+                © {currentYear} Daniel Olusakin. All rights reserved.
               </p>
 
-              {/* Made with Love */}
+              {/*Reserves*/}
               <p className="text-sm text-muted-foreground flex items-center gap-1">
-                Made with <Heart className="h-4 w-4 text-red-500" /> using React & Tailwind CSS
+                Made using React & Tailwind CSS
               </p>
             </div>
           </div>

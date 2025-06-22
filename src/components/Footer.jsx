@@ -53,22 +53,6 @@ const Footer = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main Footer Content */}
           <div className="text-center mb-8">
-          
-            {/* Social Links */}
-            <div className="flex justify-center space-x-6 mb-8">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-200"
-                  aria-label={social.label}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
 
             {/* Contact Details */}
             <div className="mb-8 justify-between flex flex-row">
@@ -90,6 +74,22 @@ const Footer = () => {
                     )}
                   </div>
                 </div>
+              ))}
+            </div>
+          
+            {/* Social Links */}
+            <div className="flex justify-center space-x-6 mb-8">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors duration-200"
+                  aria-label={social.label}
+                >
+                  {social.icon}
+                </a>
               ))}
             </div>
 

@@ -7,11 +7,12 @@ const Skills = () => {
       title: "Programming Languages",
       icon: <Code className="h-6 w-6" />,
       skills: [
-        { name: "Python", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "Java", level: 75 },
-        { name: "HTML", level: 90 },
-        { name: "CSS", level: 65 },
+        { name: "Java", level: 80 },
+        { name: "JavaScript", level: 70 },
+        { name: "Python", level: 65 },
+        { name: "HTML", level: 80 },
+        { name: "PHP", level: 50 },
+        { name: "CSS", level: 65},
         { name: "SQL", level: 70 }
       ]
     },
@@ -19,10 +20,10 @@ const Skills = () => {
       title: "Frameworks & Libraries",
       icon: <Globe className="h-6 w-6" />,
       skills: [
-        { name: "React", level: 80 },
+        { name: "React", level: 70 },
         { name: "Node.js", level: 70 },
-        { name: "Express.js", level: 65 },
-        { name: "Bootstrap", level: 85 },
+        { name: "Spring Boot", level: 65 },
+        { name: "CodeIgniter V3", level: 40 },
         { name: "Tailwind CSS", level: 75 },
         { name: "jQuery", level: 60 }
       ]
@@ -32,8 +33,8 @@ const Skills = () => {
       icon: <Wrench className="h-6 w-6" />,
       skills: [
         { name: "Git/GitHub", level: 85 },
-        { name: "VS Code", level: 90 },
-        { name: "IntelliJ", level: 60 },
+        { name: "VSCode/IntelliJ", level: 80 },
+        { name: "Maven", level: 70 },
         { name: "PostgreSQL ", level: 65 },
         { name: "MySQL", level: 70 },
         { name: "Docker", level: 50 }
@@ -43,11 +44,11 @@ const Skills = () => {
       title: "Concepts & Methodologies",
       icon: <BookOpen className="h-6 w-6" />,
       skills: [
-        { name: "Data Structures", level: 80 },
-        { name: "Algorithms", level: 75 },
+        { name: "Data Structures", level: 70 },
+        { name: "Algorithms", level: 70 },
         { name: "OOP", level: 85 },
         { name: "REST APIs", level: 70 },
-        { name: "Responsive Design", level: 85 },
+        { name: "Responsive Design", level: 65 },
         { name: "Agile/Scrum", level: 60 }
       ]
     }
@@ -68,8 +69,8 @@ const Skills = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Technologies</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Here's an overview of my technical skills and the technologies I've been learning 
-              and working with during my Computer Science journey.
+              Overview of technical skills and technologies I've been learning 
+              and working with.
             </p>
           </div>
 

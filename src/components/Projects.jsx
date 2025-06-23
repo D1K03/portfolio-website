@@ -1,44 +1,50 @@
 import React from 'react'
 import { ExternalLink, Github, Code, Database, Globe } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import cmatch from '../assets/images/cmatch.png'
+import polka from '../assets/images/polka.png'
+import lbms from '../assets/images/lbms.png'
+import storyspark from '../assets/images/storyspark.png'
 
 const Projects = () => {
   const projects = [
     {
-      title: "Task Management App",
-      description: "A full-stack web application for managing personal tasks and projects. Features include user authentication, real-time updates, and responsive design.",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      image: "/api/placeholder/400/250",
-      github: "https://github.com",
-      demo: "https://demo.com",
+      title: "Library Management System",
+      description: "MVC application for managing library books and tracking renting from users. Features icl. user authentication w/ hashing, RESTful API for easy retrieval of book information, real-time updates, and functional testing.",
+      technologies: ["Java", "MySQL", "Maven", "Docker", "JUnit Testing", "Book API"],
+      image: lbms,
+      github: "https://github.com/D1K03/library-management-system",
+      demo: null,
+      category: "App Development"
+    },
+    {
+      title: "Story Co-Writer",
+      description: "A responsive weather application that displays current conditions and forecasts. Integrates with external APIs and features location-based services.",
+      technologies: ["React", "TypeScript", "Gemini API", "Google Veo"],
+      image: storyspark,
+      github: "https://github.com/D1K03/adventure-time",
+      demo: null,
       category: "Web Development"
     },
-    {
-      title: "Weather Dashboard",
-      description: "A responsive weather application that displays current conditions and forecasts. Integrates with external APIs and features location-based services.",
-      technologies: ["JavaScript", "HTML/CSS", "Weather API", "Chart.js"],
-      image: "/api/placeholder/400/250",
-      github: "https://github.com",
-      demo: "https://demo.com",
-      category: "Frontend"
-    },
-    {
-      title: "Student Grade Calculator",
-      description: "A Python application for calculating and tracking student grades. Includes data visualization and export functionality.",
-      technologies: ["Python", "Pandas", "Matplotlib", "Tkinter"],
-      image: "/api/placeholder/400/250",
-      github: "https://github.com",
+
+        {
+      title: "Blockchain Chat Application",
+      description: "Pseudo-anonymous dApp to leverage blockchain for secure message storage. Integrated with the Polkadot ecosystem via Moonbeam for Ethereum-compatible smart contracts.",
+      technologies: ["TypeScript", "Solidity", "HTML", "CSS", "Polkadot", "Moonbeam"],
+      image: polka,
+      github: "https://github.com/D1K03/Hackathon-Polkadot-App",
       demo: null,
-      category: "Desktop App"
+      category: "Decentralised App Development"
     },
+
     {
-      title: "Recipe Finder Bot",
-      description: "A Discord bot that helps users find recipes based on available ingredients. Uses natural language processing and recipe APIs.",
-      technologies: ["Python", "Discord.py", "Recipe API", "NLP"],
-      image: "/api/placeholder/400/250",
-      github: "https://github.com",
+      title: "Country Matcher",
+      description: "Matching Country to Name & Capital. Users can choose which region to test their map geographical knowledge. Features incl. AJAX to retrieve country data from API .",
+      technologies: ["JavaScript", "jQuery", "HTML", "CSS", "AJAX", "Country API"],
+      image: cmatch,
+      github: "https://github.com/D1K03/Country-Matcher",
       demo: null,
-      category: "Bot Development"
+      category: "Web Development"
     }
   ]
 
@@ -46,9 +52,7 @@ const Projects = () => {
     switch (category) {
       case "Web Development":
         return <Globe className="h-4 w-4" />
-      case "Frontend":
-        return <Code className="h-4 w-4" />
-      case "Desktop App":
+      case "App Development":
         return <Database className="h-4 w-4" />
       default:
         return <Code className="h-4 w-4" />
@@ -63,8 +67,8 @@ const Projects = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Here are some of the projects I've worked on during my studies and in my free time. 
-              Each project represents a learning journey and showcases different skills.
+              Projects I've worked on during my studies and in my free time. 
+              Each project represents a learning journey and showcases a set of different skills.
             </p>
           </div>
 
@@ -74,9 +78,7 @@ const Projects = () => {
               <div key={index} className="bg-card rounded-lg border overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 {/* Project Image */}
                 <div className="h-48 bg-muted flex items-center justify-center">
-                  <div className="text-muted-foreground">
-                    <Code size={48} />
-                  </div>
+                  <img src={project.image} alt = {project.title}  className="w-full h-full object-fill"/>
                 </div>
 
                 {/* Project Content */}

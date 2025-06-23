@@ -33,7 +33,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
             <p className="text-lg text-muted-foreground">
-              Get to know more about my journey and what drives me
+              My journey and what drives me to excel in the field of software development.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ const About = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Location</span>
-                  <span className="font-medium">University of Kent, Canterbury</span>
+                  <span className="font-medium">London, United Kingdom</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Interests</span>

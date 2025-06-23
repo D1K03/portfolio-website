@@ -1,10 +1,12 @@
 import React from 'react'
 import { Github, Linkedin, Mail, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Link } from 'react-router-dom';
 import pfp from '../assets/images/pfp.jpg';
+import cv from '../assets/current-cv.pdf';
 
 const Hero = () => {
-  return (
+  return (  
     <section id="home" className="min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
@@ -39,8 +41,10 @@ const Hero = () => {
               Contact
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8">
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              <Link>
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </Link>
             </Button>
           </div>
 

@@ -1,11 +1,15 @@
-import React from 'react'
-import { Github, Linkedin, Mail, Download } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import pfp from '../assets/images/pfp.jpg';
 import cv from '../assets/current-cv.pdf';
 
 const Hero = () => {
+
+  const scrollToBottom = () => {
+  window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})
+  }      
+
   return (  
     <section id="home" className="min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-4 text-center">
@@ -36,15 +40,15 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="text-lg px-8">
+            <Button size="lg" onClick={scrollToBottom} className="text-lg px-8">
               <Mail className="mr-2 h-5 w-5" />
               Contact
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8">
-              <Link>
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
-              </Link>
+            <Button asChild variant="outline" size="lg" className="text-lg px-8">
+              <a href={cv} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="mr-2 h-5 w-5" />
+                Open CV
+              </a>
             </Button>
           </div>
 
@@ -68,6 +72,7 @@ const Hero = () => {
             </a>
             <a
               href="mailto:olusakindaniel03@gmail.com"
+              target="_blank"
               className="text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               <Mail size={24} />

@@ -136,8 +136,10 @@ const Projects = () => {
           {/* View More Button */}
           <div className="text-center mt-12">
             <Button variant="outline" size="lg">
-              <Github className="h-5 w-5 mr-2" />
-              View More on GitHub
+              <a href="https://github.com/D1K03?tab=repositories" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                <Github className="h-5 w-5 mr-2" />
+                View More on GitHub
+              </a>
             </Button>
           </div>
         </div>

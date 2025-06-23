@@ -7,17 +7,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <Github className="h-5 w-5" />,
-      href: "https://github.com",
+      href: "https://github.com/D1K03",
       label: "GitHub"
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/daniel-olusakin-b71553224/",
       label: "LinkedIn"
     },
     {
       icon: <Mail className="h-5 w-5" />,
-      href: "mailto:alex.johnson@email.com",
+      href: "mailto:olusakindaniel03@gmail.com",
       label: "Email"
     }
   ]
@@ -45,15 +45,14 @@ const Footer = () => {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+  }         
 
   return (
     <footer className="bg-card border-t">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           {/* Main Footer Content */}
           <div className="text-center mb-8">
-
             {/* Contact Details */}
             <div className="mb-8 justify-between flex flex-row">
               {contactInfo.map((item, index) => (

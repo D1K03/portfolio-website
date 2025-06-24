@@ -69,7 +69,7 @@ const Skills = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Technologies</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Overview of technical skills & technologies I've been learning 
+              Overview of technical skills and technologies I've been learning 
               and working with.
             </p>
           </div>

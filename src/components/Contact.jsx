@@ -45,8 +45,7 @@ const Contact = forwardRef((props, ref) => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, collaborations, or just having 
-              a conversation about technology. Feel free to reach out!
+              Feel free to message me regarding opportunities, or even a simple discussion around the field.
             </p>
           </div>
 
@@ -69,9 +68,6 @@ const Contact = forwardRef((props, ref) => {
 
             <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Name
-                </label>
                 <input
                     type="text"
                     id="name"
@@ -80,13 +76,10 @@ const Contact = forwardRef((props, ref) => {
                     onChange={handleChange}
                     required
                     className="w-full px-3 py-2 border border-border rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="Your name"
+                    placeholder="Name"
                 />
                 </div>
                 <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email
-                </label>
                 <input
                     type="email"
                     id="email"
@@ -95,15 +88,12 @@ const Contact = forwardRef((props, ref) => {
                     onChange={handleChange}
                     required
                     className="w-full px-3 py-2 border border-border rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                    placeholder="your.email@example.com"
+                    placeholder="Email"
                 />
                 </div>
             </div>
             
             <div>
-                <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                Subject
-                </label>
                 <input
                 type="text"
                 id="subject"
@@ -112,14 +102,11 @@ const Contact = forwardRef((props, ref) => {
                 onChange={handleChange}
                 required
                 className="w-full px-3 py-2 border border-border rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-primary"
-                placeholder="What's this about?"
+                placeholder="Subject"
                 />
             </div>
             
             <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                Message
-                </label>
                 <textarea
                 id="message"
                 name="message"
@@ -128,7 +115,7 @@ const Contact = forwardRef((props, ref) => {
                 required
                 rows={5}
                 className="w-full px-3 py-2 border border-border rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                placeholder="Tell me about your project or just say hello!"
+                placeholder="Message"
                 />
             </div>
             

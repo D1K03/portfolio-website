@@ -49,7 +49,7 @@ const Education = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Education</h2>
             <p className="text-lg text-muted-foreground">
-              Academic Progression & Achievements
+              My academic progression and achievements in the tech field
             </p>
           </div>
 

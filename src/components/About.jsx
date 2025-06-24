@@ -33,7 +33,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
             <p className="text-lg text-muted-foreground">
-              My journey and what drives me to excel in the field of software development.
+              My progression and actions taken to excel in the field of software development.
             </p>
           </div>
 
@@ -41,7 +41,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             {/* Text Content */}
             <div>
-              <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
+              <h3 className="text-2xl font-semibold mb-6">My Progression</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   I'm a second-year Computer Science student at University, 
@@ -66,7 +66,7 @@ const About = () => {
               <div className="space-y-4">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Current Year</span>
-                  <span className="font-medium">2nd Year</span>
+                  <span className="font-medium">Second Year</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Degree</span>

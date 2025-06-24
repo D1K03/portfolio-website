@@ -3,7 +3,7 @@ import { GraduationCap, Calendar, MapPin, Award, BookOpen } from 'lucide-react'
 
 const Education = () => {
   const education = {
-    degree: "Computer Science, BSc",
+    degree: "Computer Science, BSc (Hons)",
     university: "University of Kent",
     location: "Canterbury, Kent",
     period: "2023 - 2027",

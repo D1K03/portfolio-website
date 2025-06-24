@@ -38,7 +38,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-xl font-bold">
-            <span className="text-primary">Portfolio</span>
+            <a href="#" onClick={() => window.location.reload()} className="text-primary">netlify.app</a>
           </div>
 
           {/* Desktop Navigation */}

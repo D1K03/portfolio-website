@@ -4,11 +4,7 @@ import { Button } from '@/components/ui/button';
 import pfp from '../assets/images/pfp.jpg';
 import cv from '../assets/current-cv.pdf';
 
-const Hero = () => {
-
-  const scrollToBottom = () => {
-  window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})
-  }      
+const Hero = ({scrollToContact}) => {     
 
   return (  
     <section id="home" className="min-h-screen flex items-center justify-center pt-12">
@@ -40,7 +36,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" onClick={scrollToBottom} className="text-lg px-8">
+            <Button size="lg" onClick={scrollToContact} className="text-lg px-8">
               <Mail className="mr-2 h-5 w-5" />
               Contact
             </Button>

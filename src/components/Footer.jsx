@@ -54,7 +54,7 @@ const Footer = () => {
           {/* Main Footer Content */}
           <div className="text-center mb-8">
             {/* Contact Details */}
-            <div className="mb-8 justify-between flex flex-row">
+            <div className="mb-8 justify-center sm:justify-between items-center flex flex-col sm:flex-rol gap-4 sm:gap-0">
               {contactInfo.map((item, index) => (
                 <div key={index} className="flex items-center justify-center gap-4">
                   <div className="w-8 h-8 bg-primary/10 text-primary rounded-full flex items-center justify-center flex-shrink-0">

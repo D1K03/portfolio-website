@@ -25,31 +25,31 @@ const Education = () => {
 
   const achievements = [
     {
-      title: "Google AI Hackathon",
-      description: "Chosen as 1 of 55 students out of 450+ applicants to participate in the Google AI Hackathon, where I collaborated with a team to develop an application utilising Gemini API.",
+    title: "JPMorgan Software Engineering Simulation",
+      description: "Job simulation working with financial data, building trading algorithms, using different tools and libraries.",
       date: "Jun 2025"
     },
     {
-      title: "Young Software Engineer Summer",
-      description: "Collaborated with a dedicated team and scrum master in hybrid work to build complete websites. Developed web applications using JavaScript, focusing on creating responsive and user-friendly interfaces.",
-      date: "Fall 2023"
+      title: "Polkadot x EasyA Hackathon",
+      description: "Developed and pitched a chat application, earning DOT coin from the prize pool.",
+      date: "Aug 2024"
     },
     {
-      title: "Technology Spring Week w/ Springpod",
-      description: "Remote program covering software engineering, data science, and web development ceoncepts which included workshops, guest speakers, and hands-on projects.",
-      date: "2023 - Present"
+      title: "Google IT Automation Certificate",
+      description: "Course on IT automation, data structures, and algorithms using Python, then built my first application.",
+      date: "Nov 2023"
     }
   ]
 
   return (
-    <section id="education" className="py-20">
+    <section id="education" className="py-15">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Education</h2>
             <p className="text-lg text-muted-foreground">
-              My academic journey and the knowledge I'm building
+              Academic Progression & Achievements
             </p>
           </div>
 
@@ -131,7 +131,7 @@ const Education = () => {
           </div>
 
           {/* Future Goals */}
-          <div className="mt-12 text-center bg-muted/50 rounded-lg p-8">
+          <div className="mt-12 text-center bg-muted/50 rounded-lg p-5">
             <h3 className="text-xl font-semibold mb-4">Academic Goals</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Focused on maintaining academic excellence while gaining practical experience 

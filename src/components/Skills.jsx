@@ -62,14 +62,14 @@ const Skills = () => {
   }
 
   return (
-    <section id="skills" className="py-20 bg-muted/30">
+    <section id="skills" className="py-15 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Technologies</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Overview of technical skills and technologies I've been learning 
+              Overview of technical skills & technologies I've been learning 
               and working with.
             </p>
           </div>

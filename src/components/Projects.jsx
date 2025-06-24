@@ -14,7 +14,6 @@ const Projects = () => {
       technologies: ["Java", "MySQL", "Maven", "Docker", "JUnit Testing", "Book API"],
       image: lbms,
       github: "https://github.com/D1K03/library-management-system",
-      demo: null,
       category: "App Development"
     },
     {
@@ -23,17 +22,15 @@ const Projects = () => {
       technologies: ["React", "TypeScript", "Gemini API", "Google Veo"],
       image: storyspark,
       github: "https://github.com/D1K03/adventure-time",
-      demo: null,
       category: "Web Development"
     },
 
         {
       title: "Blockchain Chat Application",
       description: "Pseudo-anonymous dApp to leverage blockchain for secure message storage. Integrated with the Polkadot ecosystem via Moonbeam for Ethereum-compatible smart contracts.",
-      technologies: ["TypeScript", "Solidity", "HTML", "CSS", "Polkadot", "Moonbeam"],
+      technologies: ["TypeScript", "Solidity", "JavaScript", "HTML", "CSS", "Polkadot", "Moonbeam"],
       image: polka,
       github: "https://github.com/D1K03/Hackathon-Polkadot-App",
-      demo: null,
       category: "Decentralised App Development"
     },
 
@@ -43,7 +40,6 @@ const Projects = () => {
       technologies: ["JavaScript", "jQuery", "HTML", "CSS", "AJAX", "Country API"],
       image: cmatch,
       github: "https://github.com/D1K03/Country-Matcher",
-      demo: null,
       category: "Web Development"
     }
   ]
@@ -60,7 +56,7 @@ const Projects = () => {
   }
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-15">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -119,14 +115,6 @@ const Projects = () => {
                         Code
                       </a>
                     </Button>
-                    {project.demo && (
-                      <Button size="sm" asChild>
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          Demo
-                        </a>
-                      </Button>
-                    )}
                   </div>
                 </div>
               </div>

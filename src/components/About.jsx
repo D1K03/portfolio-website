@@ -6,29 +6,29 @@ const About = () => {
     {
       icon: <Code className="h-6 w-6" />,
       title: "Problem Solver",
-      description: "I love tackling complex challenges and finding elegant solutions through code."
+      description: "I enjoy tackling complex challenges and finding optimal solutions through DSA knowledge."
     },
     {
       icon: <Lightbulb className="h-6 w-6" />,
       title: "Quick Learner",
-      description: "Always eager to learn new technologies and stay updated with industry trends."
+      description: "Always eager to learn new technologies, and stay updated with industry trends."
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "Team Player",
-      description: "Experienced in collaborative projects and effective communication."
+      description: "Experienced in collaborative projects in an agile/scrum manner."
     },
     {
       icon: <Coffee className="h-6 w-6" />,
-      title: "Dedicated",
-      description: "Committed to writing clean, efficient code and delivering quality results."
+      title: "Communication",
+      description: "Always seeking to improve this soft skill by tutoring while also reinforcing my own knowledge."
     }
   ]
 
   return (
     <section id="about" className="py-15 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
@@ -44,20 +44,18 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I'm currently a second-year Computer Science student at University, 
-                  where I'm developing a strong foundation in programming, algorithms, 
+                  I'm a second-year Computer Science student at University, 
+                  where I'm developing a strong foundation in programming principles, DSA, 
                   and software engineering principles.
                 </p>
                 <p>
-                  My passion for technology started in high school when I built my first 
-                  website. Since then, I've been fascinated by how code can bring ideas 
-                  to life and solve real-world problems.
+                  My passion for technology started in secondary school where I built my first project in Python using pygame.
+                  Since then, I've been fascinated by fun projects and how I can bring ideas to life to solve real-world problems.
                 </p>
                 <p>
-                  When I'm not coding, you can find me exploring new technologies, 
-                  contributing to open-source projects, or playing chess. I believe 
-                  in continuous learning and am always looking for opportunities to 
-                  grow both personally and professionally.
+                  When I'm not coding, you can find me exploring new technologies, attending different tech events and rollerskating.
+                  I believe in continuous learning and am always looking for opportunities to grow both personally and professionally,
+                  which is one of the reasons I took up tutoring.
                 </p>
               </div>
             </div>
@@ -84,7 +82,7 @@ const About = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Interests</span>
-                  <span className="font-medium">Full-Stack Dev | Rollerskating | Basketball</span>
+                  <span className="font-medium">Full-Stack Development</span>
                 </div>
               </div>
             </div>

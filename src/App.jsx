@@ -7,13 +7,12 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Education from './components/Education'
 import Footer from './components/Footer'
-import Contact from './components/Contact'
 
 function App() {
 
   const contactRef = useRef(null);
 
-  const scrollToContact = () => {
+  const scrollToFooter = () => {
     if (contactRef.current) {
       contactRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -21,16 +20,15 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Header />
+      <Header/>
       <main>
-        <Hero scrollToContact={scrollToContact} />
-        <About />
-        <Projects />
-        <Skills />
-        <Education />
-        <Contact ref={contactRef} />
+        <Hero scrollToFooter={scrollToFooter}/>
+        <About/>
+        <Projects/>
+        <Skills/>
+        <Education/>
       </main>
-      <Footer />
+      <Footer ref={contactRef}/>
     </div>
   )
 }

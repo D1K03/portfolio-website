@@ -8,11 +8,11 @@ const Skills = () => {
       icon: <Code className="h-6 w-6" />,
       skills: [
         { name: "Java", level: 80 },
-        { name: "JavaScript", level: 70 },
-        { name: "Python", level: 65 },
-        { name: "HTML", level: 80 },
+        { name: "JavaScript", level: 80 },
+        { name: "Python", level: 70 },
+        { name: "HTML", level: 90 },
         { name: "PHP", level: 50 },
-        { name: "CSS", level: 65},
+        { name: "CSS", level: 70},
         { name: "SQL", level: 70 }
       ]
     },
@@ -20,9 +20,9 @@ const Skills = () => {
       title: "Frameworks & Libraries",
       icon: <Globe className="h-6 w-6" />,
       skills: [
-        { name: "React", level: 70 },
+        { name: "React", level: 60 },
         { name: "Node.js", level: 70 },
-        { name: "Spring Boot", level: 65 },
+        { name: "Spring Boot", level: 50 },
         { name: "CodeIgniter V3", level: 40 },
         { name: "Tailwind CSS", level: 75 },
         { name: "jQuery", level: 60 }
@@ -32,10 +32,10 @@ const Skills = () => {
       title: "Tools & Technologies",
       icon: <Wrench className="h-6 w-6" />,
       skills: [
-        { name: "Git/GitHub", level: 85 },
+        { name: "Git/GitHub", level: 75 },
         { name: "VSCode/IntelliJ", level: 80 },
         { name: "Maven", level: 70 },
-        { name: "PostgreSQL ", level: 65 },
+        { name: "PostgreSQL ", level: 60 },
         { name: "MySQL", level: 70 },
         { name: "Docker", level: 50 }
       ]

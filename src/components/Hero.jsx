@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import pfp from '../assets/images/pfp.jpg';
 import cv from '../assets/current-cv.pdf';
 
-const Hero = ({scrollToContact}) => {     
+const Hero = ({scrollToFooter}) => {     
 
   return (  
     <section id="home" className="min-h-screen flex items-center justify-center pt-12">
@@ -29,14 +29,14 @@ const Hero = ({scrollToContact}) => {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-            Second-Year CS Student at the University of Kent from London with a passion for programming
+            Second-Year CS Student @ University of Kent with a passion for programming
             and a love for attending spontaneous tech events and hackathons, where I can explore new technologies
             and thrive on creativity.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" onClick={scrollToContact} className="text-lg px-8">
+            <Button size="lg" onClick={scrollToFooter} className="text-lg px-8">
               <Mail className="mr-2 h-5 w-5" />
               Contact
             </Button>

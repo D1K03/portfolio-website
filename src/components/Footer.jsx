@@ -1,7 +1,7 @@
-import React from 'react'
+import {React, forwardRef} from 'react'
 import { Heart, Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react'
 
-const Footer = () => {
+const Footer = forwardRef((props, ref) => {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
@@ -48,7 +48,7 @@ const Footer = () => {
   }         
 
   return (
-    <footer className="bg-card border-t">
+    <footer ref={ref} className="bg-card border-t">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           {/* Main Footer Content */}
@@ -106,7 +106,7 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               {/* Copyright */}
               <p className="text-sm text-muted-foreground">
-                © {currentYear} Daniel Olusakin. All rights reserved.
+                © {currentYear} Daniel Olusakin.
               </p>
 
               {/*Reserves*/}
@@ -119,7 +119,7 @@ const Footer = () => {
       </div>
     </footer>
   )
-}
+});
 
 export default Footer
 

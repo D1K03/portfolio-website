@@ -21,6 +21,8 @@ const Education = () => {
     "Web Development",
     "Software Development",
     "Computing and the Cloud",
+    "Theory of Concurrency",
+    "Internet of Things",
     "Human-Computer Interaction"
   ]
 

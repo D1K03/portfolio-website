@@ -1,7 +1,7 @@
 import React from 'react'
 import { ExternalLink, Github, Code, Database, Globe } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import cmatch from '../assets/images/cmatch.png'
+import jpmorg from '../assets/images/jpmorg.png'
 import polka from '../assets/images/polka.png'
 import lbms from '../assets/images/lbms.png'
 import storyspark from '../assets/images/storyspark.png'
@@ -16,16 +16,8 @@ const Projects = () => {
       github: "https://github.com/D1K03/library-management-system",
       category: "App Development"
     },
-    {
-      title: "Story Co-Writer",
-      description: "A responsive weather application that displays current conditions and forecasts. Integrates with external APIs and features location-based services.",
-      technologies: ["React", "TypeScript", "Gemini API", "Google Veo"],
-      image: storyspark,
-      github: "https://github.com/D1K03/adventure-time",
-      category: "Web Development"
-    },
 
-        {
+    {
       title: "Blockchain Chat Application",
       description: "Pseudo-anonymous dApp to leverage blockchain for secure message storage. Integrated with the Polkadot ecosystem via Moonbeam for Ethereum-compatible smart contracts.",
       technologies: ["TypeScript", "Solidity", "JavaScript", "HTML", "CSS", "Polkadot", "Moonbeam"],
@@ -35,11 +27,20 @@ const Projects = () => {
     },
 
     {
-      title: "Country Matcher",
-      description: "Matching Country to Name & Capital. Users can choose which region to test their map geographical knowledge. Features incl. AJAX to retrieve country data from API .",
-      technologies: ["JavaScript", "jQuery", "HTML", "CSS", "AJAX", "Country API"],
-      image: cmatch,
-      github: "https://github.com/D1K03/Country-Matcher",
+      title: "Simulated Financial System",
+      description: "Simulated financial system, integrating Apache Kafka for real-time transaction processing and H2 database for validated transaction persistence and balance management.",
+      technologies: ["Java", "Spring Boot", "H2 SQL", "Kafka", "Maven", "Incentives API"],
+      image: jpmorg,
+      github: "https://github.com/D1K03/forage-midas/tree/flow",
+      category: "App Development"
+    },
+
+    {
+      title: "Story Co-Writer",
+      description: "A responsive weather application that displays current conditions and forecasts. Integrates with external APIs and features location-based services.",
+      technologies: ["React", "TypeScript", "Gemini API", "Google Veo"],
+      image: storyspark,
+      github: "https://github.com/D1K03/adventure-time",
       category: "Web Development"
     }
   ]

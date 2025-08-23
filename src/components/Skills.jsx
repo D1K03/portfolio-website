@@ -12,7 +12,7 @@ const Skills = () => {
         { name: "Python", level: 70 },
         { name: "HTML", level: 90 },
         { name: "PHP", level: 50 },
-        { name: "CSS", level: 70},
+        { name: "CSS", level: 80},
         { name: "SQL", level: 70 }
       ]
     },
@@ -20,8 +20,8 @@ const Skills = () => {
       title: "Frameworks & Libraries",
       icon: <Globe className="h-6 w-6" />,
       skills: [
-        { name: "React", level: 60 },
-        { name: "Node.js", level: 70 },
+        { name: "React", level: 70 },
+        { name: "Node.js", level: 60 },
         { name: "Spring Boot", level: 50 },
         { name: "CodeIgniter V3", level: 40 },
         { name: "Tailwind CSS", level: 75 },

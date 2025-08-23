@@ -44,13 +44,13 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-6">My Progression</h3>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I'm a second-year Computer Science student at University, 
+                  I'm a third-year Computer Science student at University, 
                   where I'm developing a strong foundation in programming principles, DSA, 
                   and software engineering principles.
                 </p>
                 <p>
                   My passion for technology started in secondary school where I built my first project in Python using pygame.
-                  Since then, I've been fascinated by fun projects and how I can bring ideas to life to solve real-world problems.
+                  Since then, I've been fascinated with bringing my ideas to life through a software development cycle in order to solve real-world problems.
                 </p>
                 <p>
                   When I'm not coding, you can find me exploring new technologies, attending different tech events and rollerskating.
@@ -66,7 +66,7 @@ const About = () => {
               <div className="space-y-4">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Current Year</span>
-                  <span className="font-medium">Second Year</span>
+                  <span className="font-medium">Third Year</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Course</span>
@@ -74,7 +74,7 @@ const About = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Expected Graduation</span>
-                  <span className="font-medium">2027</span>
+                  <span className="font-medium">2026</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Location</span>

@@ -29,7 +29,7 @@ const Hero = ({scrollToFooter}) => {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-            Second-Year CS Student @ University of Kent with a passion for programming
+            Third-Year CS Student @ University of Kent with a passion for full-stack programming
             and a love for attending spontaneous tech events and hackathons, where I can explore new technologies
             and thrive on creativity.
           </p>

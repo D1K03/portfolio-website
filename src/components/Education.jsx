@@ -6,9 +6,9 @@ const Education = () => {
     degree: "Computer Science, BSc (Hons)",
     university: "University of Kent",
     location: "Canterbury, Kent",
-    period: "2023 - 2027",
+    period: "2023 - 2026",
     grade: "First-Class Honours (84%)",
-    status: "Second Year Student"
+    status: "Third Year Student"
   }
 
   const coursework = [

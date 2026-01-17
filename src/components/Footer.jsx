@@ -1,125 +1,72 @@
-import {React, forwardRef} from 'react'
-import { Heart, Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react'
+import { React, forwardRef } from 'react';
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 
 const Footer = forwardRef((props, ref) => {
-  const currentYear = new Date().getFullYear()
-
-  const socialLinks = [
-    {
-      icon: <Github className="h-5 w-5" />,
-      href: "https://github.com/D1K03",
-      label: "GitHub"
-    },
-    {
-      icon: <Linkedin className="h-5 w-5" />,
-      href: "https://linkedin.com/in/daniel-olusakin-b71553224/",
-      label: "LinkedIn"
-    },
-    {
-      icon: <Mail className="h-5 w-5" />,
-      href: "mailto:olusakindaniel03@gmail.com",
-      label: "Email"
-    }
-  ]
-
-  const contactInfo = [
-    {
-      icon: <Mail className="h-5 w-5" />,
-      label: "Email",
-      value: "olusakindaniel03@gmail.com",
-      href: "mailto:olusakindaniel03@gmail.com"
-    },
-    {
-      icon: <Phone className="h-5 w-5" />,
-      label: "Phone",
-      value: "+44 7555388309",
-      href: "tel:+447555388309"
-    },
-    {
-      icon: <MapPin className="h-5 w-5" />,
-      label: "Location",
-      value: "London, United Kingdom",
-      href: null
-    }
-  ]
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }         
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer ref={ref} className="bg-card border-t">
-      <div className="container mx-auto px-4 py-8">
-        <div className="max-w-4xl mx-auto">
-          {/* Main Footer Content */}
-          <div className="text-center mb-8">
-            {/* Contact Details */}
-            <div className="mb-8 justify-center sm:justify-between items-center flex flex-col sm:flex-row gap-4 sm:gap-0">
-              {contactInfo.map((item, index) => (
-                <div key={index} className="flex items-center justify-center gap-4">
-                  <div className="w-8 h-8 bg-primary/10 text-primary rounded-full flex items-center justify-center flex-shrink-0">
-                    {item.icon}
-                  </div>
-                  <div>
-                    {item.href ? (
-                      <a 
-                        href={item.href}
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        {item.value}
-                      </a>
-                    ) : (
-                      <p className="text-muted-foreground">{item.value}</p>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          
-            {/* Social Links */}
-            <div className="flex justify-center space-x-6 mb-8">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-200"
-                  aria-label={social.label}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
+    <footer ref={ref} className="bg-card border-t py-12">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          {/* Contact Header */}
+          <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
+          <p className="text-muted-foreground mb-6">
+            Open to Opportunities
+          </p>
 
-            {/* Back to Top */}
-            <button
-              onClick={scrollToTop}
-              className="text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
+          {/* Email */}
+          <a
+            href="mailto:olusakindaniel03@gmail.com"
+            className="inline-block text-lg text-primary hover:underline mb-6"
+          >
+            olusakindaniel03@gmail.com
+          </a>
+
+          {/* Location */}
+          <p className="flex items-center justify-center gap-1.5 text-sm text-muted-foreground mb-8">
+            <MapPin className="h-4 w-4" />
+            London, United Kingdom
+          </p>
+
+          {/* Social Links */}
+          <div className="flex justify-center gap-4 mb-8">
+            <a
+              href="https://github.com/D1K03"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all"
+              aria-label="GitHub"
             >
-              Back to Top ↑
-            </button>
+              <Github size={20} />
+            </a>
+            <a
+              href="https://linkedin.com/in/daniel-olusakin-b71553224/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a
+              href="mailto:olusakindaniel03@gmail.com"
+              className="p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all"
+              aria-label="Email"
+            >
+              <Mail size={20} />
+            </a>
           </div>
 
-          {/* Divider */}
-          <div className="border-t border-border pt-8">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-              {/* Copyright */}
-              <p className="text-sm text-muted-foreground">
-                © {currentYear} Daniel Olusakin.
-              </p>
-
-              {/*Reserves*/}
-              <p className="text-sm text-muted-foreground flex items-center gap-1">
-                Made using React & Tailwind CSS
-              </p>
-            </div>
+          {/* Divider & Copyright */}
+          <div className="border-t border-border pt-6">
+            <p className="text-xs text-muted-foreground">
+              {currentYear} Daniel Olusakin
+            </p>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 });
 
-export default Footer
-
+export default Footer;

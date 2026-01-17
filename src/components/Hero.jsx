@@ -1,91 +1,84 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import pfp from '../assets/images/pfp.jpg';
 import cv from '../assets/current-cv.pdf';
 
-const Hero = ({scrollToFooter}) => {     
-
-  return (  
-    <section id="home" className="min-h-screen flex items-center justify-center pt-12">
-      <div className="container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto">
+const Hero = ({ scrollToFooter }) => {
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center pt-16">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto text-center">
           {/* Profile Image */}
-          <div className="mb-8">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-4xl font-bold text-primary-foreground overflow-hidden">
-              <img src={pfp} alt="PFP"/>
+          <div className="mb-6">
+            <div className="w-28 h-28 mx-auto rounded-full border-4 border-primary/20 overflow-hidden">
+              <img src={pfp} alt="Daniel Olusakin" className="w-full h-full object-cover" />
             </div>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-primary">Daniel Olusakin</span>
+          {/* Name */}
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">
+            Daniel Olusakin
           </h1>
 
-          {/* Subtitle */}
-          <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">
-            Computer Science Student & Aspiring Software Developer
-          </h2>
+          {/* Title */}
+          <p className="text-xl md:text-2xl text-primary font-medium mb-4">
+            Software Developer
+          </p>
 
-          {/* Description */}
-          <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-            Third-Year CS Student @ University of Kent with a passion for full-stack programming
-            and a love for attending spontaneous tech events and hackathons, where I can explore new technologies
-            and thrive on creativity.
+          {/* Brief Description */}
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Final-year Computer Science student at the University of Kent,
+            building full-stack applications and exploring new technologies through hackathons.
+            Currently interning at Art4site.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" onClick={scrollToFooter} className="text-lg px-8">
-              <Mail className="mr-2 h-5 w-5" />
-              Contact
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
+            <Button size="lg" onClick={scrollToFooter}>
+              <Mail className="mr-2 h-4 w-4" />
+              Get in Touch
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8">
+            <Button asChild variant="outline" size="lg">
               <a href={cv} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-2 h-5 w-5" />
-                Open CV
+                <FileText className="mr-2 h-4 w-4" />
+                View CV
               </a>
             </Button>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center gap-4">
             <a
               href="https://github.com/D1K03"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+              className="p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all"
+              aria-label="GitHub"
             >
-              <Github size={24} />
+              <Github size={22} />
             </a>
             <a
               href="https://linkedin.com/in/daniel-olusakin-b71553224/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+              className="p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all"
+              aria-label="LinkedIn"
             >
-              <Linkedin size={24} />
+              <Linkedin size={22} />
             </a>
             <a
               href="mailto:olusakindaniel03@gmail.com"
-              target="_blank"
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+              className="p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all"
+              aria-label="Email"
             >
-              <Mail size={24} />
+              <Mail size={22} />
             </a>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="hidden lg:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
-
+export default Hero;

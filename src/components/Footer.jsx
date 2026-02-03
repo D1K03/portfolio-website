@@ -5,31 +5,31 @@ const Footer = forwardRef((props, ref) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer ref={ref} className="bg-card border-t py-12">
+    <footer ref={ref} className="bg-card border-t py-10">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           {/* Contact Header */}
           <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
-          <p className="text-muted-foreground mb-6">
+          <p className="text-muted-foreground mb-4">
             Open to Opportunities
           </p>
 
           {/* Email */}
           <a
             href="mailto:olusakindaniel03@gmail.com"
-            className="inline-block text-lg text-primary hover:underline mb-6"
+            className="inline-block text-lg text-primary hover:underline mb-4"
           >
             olusakindaniel03@gmail.com
           </a>
 
           {/* Location */}
-          <p className="flex items-center justify-center gap-1.5 text-sm text-muted-foreground mb-8">
+          <p className="flex items-center justify-center gap-1.5 text-sm text-muted-foreground mb-6">
             <MapPin className="h-4 w-4" />
             London, United Kingdom
           </p>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-4 mb-8">
+          <div className="flex justify-center gap-4 mb-6">
             <a
               href="https://github.com/D1K03"
               target="_blank"

@@ -9,8 +9,10 @@ const Experience = () => {
       location: "Wye, Kent",
       period: "Jan 2026 - Present",
       description: [
-        "Automating production workflow by improving integration between customer-facing interface and backend systems",
-        "Enhancing data connectivity between FileMaker, Intercom, and internal order-management systems"
+        "Designed REST API integration between FileMaker Pro and Intercom, automating multi-stage order updates",
+        "Engineered secure API workflows using Bearer token authentication and JSON payloads with Postman testing",
+        "Optimised database schema with relational fields and dynamic templating engine for context-aware emails",
+        "Reduced manual overhead through UI-triggered scripts automating customer notifications"
       ],
       current: true
     },
@@ -20,19 +22,19 @@ const Experience = () => {
       location: "Canterbury, Kent",
       period: "Sept 2024 - Present",
       description: [
-        "Instructing ~12 students per session on object-oriented programming in Python and Java",
-        "Analysing source code to identify bugs and providing targeted guidance for improvement"
+        "Assisted in instructing 20+ students per session on OOP in Python and Java",
+        "Deep-dive source code analysis to debug logic errors and provide architectural guidance"
       ],
       current: true
     }
   ];
 
   return (
-    <section id="experience" className="py-20 bg-muted/30">
+    <section id="experience" className="py-12 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-3">Experience</h2>
             <p className="text-muted-foreground">
               Professional experience and roles

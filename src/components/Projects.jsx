@@ -8,56 +8,63 @@ import lbms from '../assets/images/lbms.png';
 const Projects = () => {
   const projects = [
     {
-      title: "Library Management System",
-      description: "Full-stack library system for tracking books, users, and rentals. Features secure authentication with JBCrypt, REST API integration for book data, and comprehensive JUnit testing.",
-      technologies: ["Java", "MySQL", "Docker", "Maven", "JUnit"],
-      image: lbms,
-      github: "https://github.com/D1K03/library-management-system"
+      title: "Markdown Application",
+      description: "Full-stack app with secure JWT authentication, RESTful CRUD API, and AWS S3 integration for scalable cloud storage of file attachments.",
+      technologies: ["React", "TypeScript", "Express.js", "PostgreSQL", "AWS S3", "Docker"],
+      image: null,
+      github: "https://github.com/D1K03/slate-note-taking"
     },
     {
       title: "JPMorgan Financial Simulation",
-      description: "Spring Boot backend for a simulated financial system with Apache Kafka for real-time transaction processing and H2 database for transaction persistence and balance management.",
-      technologies: ["Java", "Spring Boot", "Kafka", "H2 SQL", "REST API"],
+      description: "Spring Boot backend integrating Apache Kafka for real-time transaction processing and H2 database for validated transaction persistence and balance management.",
+      technologies: ["Java", "Spring Boot", "Kafka", "H2 SQL", "Incentives API"],
       image: jpmorg,
       github: "https://github.com/D1K03/forage-midas/tree/flow"
     },
     {
-      title: "Markdown Notetaking App",
-      description: "Full-stack note-taking application with secure JWT authentication, RESTful API for CRUD operations, and AWS S3 integration for scalable file attachment storage.",
-      technologies: ["React", "TypeScript", "Express.js", "PostgreSQL", "AWS S3", "Docker"],
-      image: null,
-      github: "https://github.com/D1K03/slate-note-taking"
+      title: "Library Management System",
+      description: "Comprehensive system to track books, users, and rentals. Authentication secured by salting and hashing. Unit tested with JUnit, FlatLaf UI design.",
+      technologies: ["Java", "MySQL", "Docker", "Maven", "Book API"],
+      image: lbms,
+      github: "https://github.com/D1K03/library-management-system"
     }
   ];
 
   const hackathons = [
     {
-      title: "ICHack 2025",
-      description: "Led a team building an AI code feedback application, pitched to JetBrains representatives.",
-      technologies: ["Python", "Flask", "React", "OpenAI API"],
-      icon: "🏆"
+      title: "2x ICHack 26 Winner",
+      description: "Won Anthropic (Claude) & Hacktron AI tracks. Built 'orbitSec', a gamified security tool using FastAPI and React with custom Python wrapper bridging Windows and WSL.",
+      technologies: ["FastAPI", "React", "Python", "Claude API", "Hacktron CLI"],
+      icon: "🏆",
+      featured: true
     },
     {
       title: "Google AI Hackathon",
-      description: "Selected as 1 of 55 from 450+ applicants to build a web app using Google Veo from Gemini API.",
-      technologies: ["React", "TypeScript", "Gemini API"],
+      description: "Selected as 1 of 55 globally from 450+ applicants to develop a web app leveraging Gemini API and Google Veo.",
+      technologies: ["React", "TypeScript", "Gemini API", "Google Veo"],
       icon: "🎯"
     },
     {
       title: "EasyA Polkadot Hackathon",
-      description: "Built a decentralised chat app that earned DOT coin from the prize pool.",
+      description: "Developed and pitched a decentralised chat application that surpassed technical standards, earning DOT coin.",
       technologies: ["TypeScript", "Solidity", "Ethers.js"],
       image: polka,
       icon: "🥇"
+    },
+    {
+      title: "ICHack 25",
+      description: "Led a team to build an AI code feedback engine using Python Flask and OpenAI API. Pitched MVP to JetBrains representatives.",
+      technologies: ["Python", "Flask", "React", "OpenAI API"],
+      icon: "🎖️"
     }
   ];
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-3">Projects</h2>
             <p className="text-muted-foreground">
               A selection of projects I've built
@@ -65,7 +72,7 @@ const Projects = () => {
           </div>
 
           {/* Main Projects */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
             {projects.map((project, index) => (
               <div
                 key={index}
@@ -122,16 +129,16 @@ const Projects = () => {
               <h3 className="text-xl font-semibold">Hackathons</h3>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {hackathons.map((hackathon, index) => (
                 <div
                   key={index}
-                  className="bg-card rounded-lg border p-4 hover:shadow-md transition-shadow"
+                  className={`bg-card rounded-lg border p-4 hover:shadow-md transition-shadow ${hackathon.featured ? 'border-primary/50 bg-primary/5' : ''}`}
                 >
-                  <div className="flex items-start gap-3 mb-3">
-                    <span className="text-2xl">{hackathon.icon}</span>
+                  <div className="flex items-start gap-3 mb-2">
+                    <span className="text-xl">{hackathon.icon}</span>
                     <div>
-                      <h4 className="font-semibold text-sm">{hackathon.title}</h4>
+                      <h4 className={`font-semibold text-sm ${hackathon.featured ? 'text-primary' : ''}`}>{hackathon.title}</h4>
                     </div>
                   </div>
                   <p className="text-xs text-muted-foreground mb-3">

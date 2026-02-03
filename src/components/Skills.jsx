@@ -4,7 +4,7 @@ const Skills = () => {
   const skillGroups = [
     {
       title: "Languages",
-      skills: ["Java", "Python", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
+      skills: ["Java", "Python", "JavaScript", "TypeScript", "HTML", "CSS", "SQL", "FileMaker Scripting"]
     },
     {
       title: "Frameworks & Libraries",
@@ -16,16 +16,16 @@ const Skills = () => {
     },
     {
       title: "Tools & Platforms",
-      skills: ["Git", "Docker", "AWS S3", "Maven", "JUnit", "Jest", "VS Code", "IntelliJ"]
+      skills: ["Git", "Docker", "AWS S3", "Maven", "JUnit", "Jest", "Bun", "NPM", "VS Code", "IntelliJ"]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-muted/30">
+    <section id="skills" className="py-12 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-3">Skills</h2>
             <p className="text-muted-foreground">
               Technologies I work with
@@ -33,7 +33,7 @@ const Skills = () => {
           </div>
 
           {/* Skills Grid */}
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             {skillGroups.map((group, index) => (
               <div key={index} className="bg-card rounded-lg border p-5">
                 <h3 className="font-semibold mb-4 text-sm text-muted-foreground uppercase tracking-wider">

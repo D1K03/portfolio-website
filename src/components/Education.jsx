@@ -14,11 +14,11 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20">
+    <section id="education" className="py-12">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-3">Education</h2>
             <p className="text-muted-foreground">
               Academic background

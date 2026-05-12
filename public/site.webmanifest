@@ -1,0 +1,19 @@
+{
+  "name": "Daniel Olusakin — Portfolio",
+  "short_name": "Daniel Olusakin",
+  "description": "Daniel Olusakin — Software Developer & Hackathon Winner. Final-year CS student at the University of Kent.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "lang": "en-GB",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

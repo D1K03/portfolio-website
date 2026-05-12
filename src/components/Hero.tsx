@@ -46,10 +46,10 @@ function Hero({ scrollToContact }: HeroProps): React.ReactElement {
             Software Developer
           </p>
 
-          <p className="text-base text-muted-foreground mb-5 max-w-xl mx-auto">
-            Final-year Computer Science student at the University of Kent. Full-stack engineer
-            shipping AI tooling and winning hackathons. Recently interned at Art4site.
-          </p>
+          <div className="text-base text-muted-foreground mb-5 max-w-xl mx-auto">
+            <p>Final-year Computer Science student at the University of Kent.</p>
+            <p>Full-stack engineer, shipping AI tooling and winning hackathons. Recently interned at Art4site.</p>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
             <Button size="lg" onClick={scrollToContact}>
@@ -86,7 +86,7 @@ function Hero({ scrollToContact }: HeroProps): React.ReactElement {
             </li>
             <li>
               <a
-                href="https://linkedin.com/in/daniel-olusakin-b71553224/"
+                href="https://linkedin.com/in/daniel-olusakin/"
                 target="_blank"
                 rel="noopener noreferrer me"
                 className="inline-flex p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all"

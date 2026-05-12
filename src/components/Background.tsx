@@ -31,7 +31,7 @@ const COURSEWORK: readonly string[] = [
 
 function Background(): React.ReactElement {
   return (
-    <section id="skills" aria-labelledby="background-heading" className="py-12 bg-muted/30">
+    <section id="skills" aria-labelledby="background-heading" className="py-12 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8">
@@ -39,7 +39,7 @@ function Background(): React.ReactElement {
               Skills & Education
             </h2>
             <p className="text-muted-foreground">
-              Day-to-day stack and academic background. AWS Cloud Practitioner in progress.
+              Stack and academic background. Currently pursuing <span className='text-primary'>AWS Cloud Practitioner</span>.
             </p>
           </div>
 
@@ -73,9 +73,8 @@ function Background(): React.ReactElement {
             </article>
 
             <article
-              id="education"
               aria-labelledby="education-heading"
-              className="bg-card rounded-lg border p-5 scroll-mt-24"
+              className="bg-card rounded-lg border p-5"
             >
               <h3
                 id="education-heading"

@@ -43,7 +43,7 @@ function Experience(): React.ReactElement {
     <section
       id="experience"
       aria-labelledby="experience-heading"
-      className="py-12 bg-muted/30"
+      className="py-12 bg-muted/30 scroll-mt-20"
     >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">

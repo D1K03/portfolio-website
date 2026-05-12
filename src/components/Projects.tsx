@@ -1,13 +1,15 @@
 import { Github, Trophy, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import jpmorg from '../assets/images/jpmorg.png';
-import lbms from '../assets/images/lbms.png';
+import bookStack from '../assets/images/book-stack.png';
+import harmonyLogo from '../assets/images/harmony_logo_no_bg.png';
 
 interface Project {
   title: string;
   description: string;
   technologies: readonly string[];
   image: string | null;
+  imageFit?: 'cover' | 'contain' | 'icon';
   github: string;
   live?: string;
 }
@@ -23,9 +25,9 @@ interface Hackathon {
 
 const PROJECTS: readonly Project[] = [
   {
-    title: 'Harmony — AI Email Classification',
+    title: 'Harmony - AI Email Classification',
     description:
-      'Contributing to a multi-provider (Gmail, Outlook, IMAP) email triage tool. AI auto-categorises mail, generates draft replies, and syncs labels in real time via Gmail Pub/Sub and Outlook webhooks.',
+      'AI auto-categorises mail, generates draft replies, and syncs labels in real time via Gmail Pub/Sub and Outlook webhooks.',
     technologies: [
       'Next.js',
       'TypeScript',
@@ -35,7 +37,8 @@ const PROJECTS: readonly Project[] = [
       'Gmail/Outlook APIs',
       'Stripe',
     ],
-    image: null,
+    image: harmonyLogo,
+    imageFit: 'contain',
     github: 'https://github.com/D1K03',
   },
   {
@@ -52,6 +55,7 @@ const PROJECTS: readonly Project[] = [
       'Spring Boot backend integrating Apache Kafka for real-time transaction processing and H2 database for validated transaction persistence and balance management.',
     technologies: ['Java', 'Spring Boot', 'Kafka', 'H2 SQL', 'Incentives API'],
     image: jpmorg,
+    imageFit: 'contain',
     github: 'https://github.com/D1K03/forage-midas/tree/flow',
   },
   {
@@ -59,14 +63,15 @@ const PROJECTS: readonly Project[] = [
     description:
       'Comprehensive system to track books, users, and rentals. Authentication secured by salting and hashing. Unit tested with JUnit, FlatLaf UI design.',
     technologies: ['Java', 'MySQL', 'Docker', 'Maven', 'Book API'],
-    image: lbms,
+    image: bookStack,
+    imageFit: 'icon',
     github: 'https://github.com/D1K03/library-management-system',
   },
 ];
 
 const HACKATHONS: readonly Hackathon[] = [
   {
-    title: 'KentHackIt 26 — Main Track Winner',
+    title: 'KentHackIt 26 - Main Track Winner',
     description:
       "Built 'PromptGolf', a multiplayer party game where players race to reverse-engineer a target image by writing tighter prompts for an AI image generator. Server-authoritative timing, Redis-only state, real-time presence via Pusher.",
     technologies: ['Next.js 15', 'TypeScript', 'fal.ai FLUX', 'Upstash Redis', 'Pusher'],
@@ -84,7 +89,7 @@ const HACKATHONS: readonly Hackathon[] = [
     featured: true,
   },
   {
-    title: 'Google AI Hackathon — Top 55 Globally',
+    title: 'Google AI Hackathon - Top 55 Globally',
     description:
       'Selected as 1 of 55 globally from 450+ applicants to develop a web app leveraging the Gemini API and Google Veo.',
     technologies: ['React', 'TypeScript', 'Gemini API', 'Google Veo'],
@@ -94,9 +99,9 @@ const HACKATHONS: readonly Hackathon[] = [
 
 function Projects(): React.ReactElement {
   return (
-    <section id="projects" aria-labelledby="projects-heading" className="py-12">
+    <section id="projects" aria-labelledby="projects-heading" className="py-12 scroll-mt-20">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
             <h2 id="projects-heading" className="text-3xl font-bold mb-3">
               Projects
@@ -114,24 +119,34 @@ function Projects(): React.ReactElement {
                   {project.image ? (
                     <img
                       src={project.image}
-                      alt={`${project.title} screenshot`}
+                      alt={
+                        project.imageFit && project.imageFit !== 'cover'
+                          ? `${project.title} icon`
+                          : `${project.title} screenshot`
+                      }
                       loading="lazy"
-                      className="w-full h-full object-cover"
+                      className={`w-full h-full ${
+                        project.imageFit === 'icon'
+                          ? 'object-contain p-8'
+                          : project.imageFit === 'contain'
+                            ? 'object-contain p-2'
+                            : 'object-cover'
+                      }`}
                     />
                   ) : (
-                    <div className="text-4xl text-muted-foreground/30" aria-hidden="true">
+                    <div className="text-7xl text-muted-foreground/40" aria-hidden="true">
                       📝
                     </div>
                   )}
                 </div>
 
-                <div className="p-5 flex flex-col flex-grow">
-                  <h3 className="font-semibold mb-2">{project.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4 flex-grow">
+                <div className="p-4 flex flex-col flex-grow">
+                  <h3 className="font-semibold mb-1.5">{project.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-3 flex-grow">
                     {project.description}
                   </p>
 
-                  <ul className="flex flex-wrap gap-1.5 mb-4 list-none p-0 m-0">
+                  <ul className="flex flex-wrap gap-1.5 mb-3 list-none p-0 m-0">
                     {project.technologies.map((tech) => (
                       <li
                         key={tech}

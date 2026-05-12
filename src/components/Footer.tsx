@@ -39,13 +39,13 @@ const Footer = forwardRef<HTMLElement>((_props, ref) => {
   };
 
   return (
-    <footer ref={ref} id="contact" className="bg-card border-t py-12 scroll-mt-16">
+    <footer ref={ref} id="contact" className="bg-card border-t py-12 scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-2">Get in Touch</h2>
             <p className="text-muted-foreground">
-              Open to graduate roles, internships, and collaboration on AI / full-stack projects.
+              Open to graduate/junior roles, internships and collaboration on full-stack projects.
             </p>
           </div>
 
@@ -123,8 +123,8 @@ const Footer = forwardRef<HTMLElement>((_props, ref) => {
                       : 'text-muted-foreground'
                 }`}
               >
-                {status === 'success' && 'Thanks — I’ll get back to you soon.'}
-                {status === 'error' && 'Something went wrong. Email me directly instead.'}
+                {status === 'success' && 'Thanks, i’ll get back to you soon.'}
+                {status === 'error' && 'Something went wrong, email me directly instead.'}
               </span>
             </div>
           </form>
@@ -148,7 +148,7 @@ const Footer = forwardRef<HTMLElement>((_props, ref) => {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/daniel-olusakin-b71553224/"
+                  href="https://linkedin.com/in/daniel-olusakin/"
                   target="_blank"
                   rel="noopener noreferrer me"
                   className="inline-flex p-2 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-all"
@@ -169,8 +169,19 @@ const Footer = forwardRef<HTMLElement>((_props, ref) => {
             </ul>
           </address>
 
-          <div className="border-t border-border pt-6 text-center">
+          <div className="border-t border-border pt-6 text-center space-y-1">
             <p className="text-xs text-muted-foreground">© {currentYear} Daniel Olusakin</p>
+            <p className="text-[10px] text-muted-foreground/70">
+              <a
+                href="https://www.flaticon.com/free-icons/book"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="book icons"
+                className="hover:underline"
+              >
+                Book icons by Smashicons - Flaticon
+              </a>
+            </p>
           </div>
         </div>
       </div>

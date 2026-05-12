@@ -2,12 +2,106 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Daniel Olusakin</title>
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <title>Daniel Olusakin — Software Developer & Hackathon Winner</title>
+    <meta
+      name="description"
+      content="Daniel Olusakin — Final-year Computer Science student at the University of Kent. Full-stack software developer, 3x hackathon winner, building AI tooling and modern web apps."
+    />
+    <meta
+      name="keywords"
+      content="Daniel Olusakin, software developer, full-stack developer, hackathon winner, University of Kent, React, TypeScript, AI engineer, London"
+    />
+    <meta name="author" content="Daniel Olusakin" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <link rel="canonical" href="https://danielolusakin.com/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Daniel Olusakin" />
+    <meta property="og:url" content="https://danielolusakin.com/" />
+    <meta property="og:title" content="Daniel Olusakin — Software Developer" />
+    <meta
+      property="og:description"
+      content="Full-stack developer & 3x hackathon winner. Building AI tools, modern web apps, and shipping end-to-end products."
+    />
+    <meta property="og:image" content="https://danielolusakin.com/og-image.png" />
+    <meta property="og:image:alt" content="Daniel Olusakin portfolio" />
+    <meta property="og:locale" content="en_GB" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Daniel Olusakin — Software Developer" />
+    <meta
+      name="twitter:description"
+      content="Full-stack developer & 3x hackathon winner. Building AI tools, modern web apps, and shipping end-to-end products."
+    />
+    <meta name="twitter:image" content="https://danielolusakin.com/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Daniel Olusakin",
+        "url": "https://danielolusakin.com",
+        "image": "https://danielolusakin.com/og-image.png",
+        "jobTitle": "Software Developer",
+        "email": "mailto:olusakindaniel03@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "London",
+          "addressCountry": "GB"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Kent",
+          "sameAs": "https://www.kent.ac.uk/"
+        },
+        "knowsAbout": [
+          "TypeScript",
+          "React",
+          "Next.js",
+          "Java",
+          "Spring Boot",
+          "Python",
+          "AI Engineering",
+          "Cloud Computing",
+          "AWS"
+        ],
+        "sameAs": [
+          "https://github.com/D1K03",
+          "https://linkedin.com/in/daniel-olusakin-b71553224/"
+        ]
+      }
+    </script>
   </head>
   <body>
+    <a
+      href="#home"
+      style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden"
+    >
+      Skip to content
+    </a>
+
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!--
+      Static form for Netlify form-detection at build time.
+      The React-rendered form posts to the same `contact` form name.
+    -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -1,31 +1,26 @@
-import React, { useRef } from 'react';
-import './App.css';
+import { useRef } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Education from './components/Education';
+import Background from './components/Background';
 import Footer from './components/Footer';
 
-function App() {
-  const contactRef = useRef(null);
+function App(): React.ReactElement {
+  const contactRef = useRef<HTMLElement>(null);
 
-  const scrollToFooter = () => {
-    if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+  const scrollToContact = (): void => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
     <div className="dark min-h-screen bg-background text-foreground">
       <Header />
       <main>
-        <Hero scrollToFooter={scrollToFooter} />
+        <Hero scrollToContact={scrollToContact} />
         <Experience />
         <Projects />
-        <Skills />
-        <Education />
+        <Background />
       </main>
       <Footer ref={contactRef} />
     </div>

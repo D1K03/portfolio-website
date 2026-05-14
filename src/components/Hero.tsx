@@ -1,6 +1,5 @@
 import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import pfp from '../assets/images/pfp.jpg';
 import cv from '../assets/current-cv.pdf';
 
 const CV_UPDATED = 'May 2026';
@@ -21,7 +20,7 @@ function Hero({ scrollToContact }: HeroProps): React.ReactElement {
           <div className="mb-3">
             <div className="w-20 h-20 mx-auto rounded-full border-4 border-primary/30 overflow-hidden">
               <img
-                src={pfp}
+                src="/headshot.webp"
                 alt="Daniel Olusakin headshot"
                 width={80}
                 height={80}

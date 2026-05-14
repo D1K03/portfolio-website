@@ -43,7 +43,7 @@ function Hero({ scrollToContact }: HeroProps): React.ReactElement {
           </h1>
 
           <p className="text-xl md:text-2xl text-primary font-medium mb-2">
-            Software Developer
+            Software Engineer
           </p>
 
           <div className="text-base text-muted-foreground mb-5 max-w-xl mx-auto">

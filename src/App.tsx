@@ -56,12 +56,12 @@ const PREVIOUS_ROLES: readonly Role[] = [
   {
     title: 'Systems & Automation Intern',
     org: 'Art4site',
-    period: 'Jan – Mar 2026',
+    period: 'Jan - Mar 2026',
   },
   {
-    title: 'Peer Tutor, Computer Science',
+    title: 'Peer Tutor (Computer Science)',
     org: 'University of Kent',
-    period: 'Sept 2024 – June 2026',
+    period: 'Sept 2024 - June 2026',
   },
 ];
 
@@ -108,7 +108,7 @@ function App(): ReactElement {
         <Section n={1} label="Name">
           <div className="flex items-center gap-5">
             <img
-              src="/headshot.webp"
+              src="/headshot.jpg"
               alt="Daniel Olusakin headshot"
               width={56}
               height={56}
@@ -119,7 +119,7 @@ function App(): ReactElement {
             <div>
               <h1 className="text-3xl font-semibold tracking-tight">Daniel Olusakin</h1>
               <p className="mt-1 text-sm text-dim">
-                Software Engineer · 4x hackathon winner
+                Software Developer · 4x Hackathon Winner
               </p>
             </div>
           </div>
@@ -139,7 +139,7 @@ function App(): ReactElement {
             Junior Python Developer at <OutLink href="https://www.cdp.net">CDP</OutLink>
           </p>
           <p className="mt-2 text-sm leading-relaxed text-dim">
-            On the Scoring Automation team — building and maintaining the Python
+            On the Scoring Automation team - building and maintaining the Python
             tooling and data workflows behind CDP{'’'}s annual environmental
             disclosure scores.
           </p>
@@ -165,10 +165,10 @@ function App(): ReactElement {
 
         <Section n={5} label="Education">
           <p>
-            BSc Computer Science, First Class Honours
+            BSc Computer Science - First Class Honours
             <span className="text-dim"> · University of Kent</span>
           </p>
-          <p className="mt-1 font-mono text-xs text-faint">2023 – 2026</p>
+          <p className="mt-1 font-mono text-xs text-faint">2023 - 2026</p>
         </Section>
 
         <Section n={6} label="Projects">
@@ -244,7 +244,7 @@ function App(): ReactElement {
           style={{ animationDelay: '720ms' }}
         >
           <p className="font-mono text-[11px] text-faint">
-            © {new Date().getFullYear()} Daniel Olusakin — London
+            © {new Date().getFullYear()} Daniel Olusakin - London
           </p>
         </footer>
       </div>

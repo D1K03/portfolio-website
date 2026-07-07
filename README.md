@@ -1,24 +1,24 @@
 # Portfolio — Daniel Olusakin
 
-Personal portfolio site for Daniel Olusakin — final-year Computer Science student at the University of Kent, full-stack developer, and 3x hackathon winner.
+Personal portfolio site for Daniel Olusakin — Software Engineer, Junior Python Developer at CDP, and 4x hackathon winner.
 
 **Live:** [danielolusakin.com](https://danielolusakin.com)
+
+A minimal single-column, numbered-index layout (`01 Name`, `02 Location`, …) in a neutral dark-grey theme.
 
 ## Stack
 
 - **Framework:** React 19 + Vite 6 (SWC)
 - **Language:** TypeScript
-- **Styling:** Tailwind CSS + shadcn/ui
-- **Icons:** Lucide React
+- **Styling:** Tailwind CSS
 - **Hosting:** Netlify
-- **Forms:** Netlify Forms
 
 ## Features
 
 - Fully type-safe with TypeScript strict mode (`noUnusedLocals`, `noUnusedParameters`, no implicit any)
-- Semantic HTML throughout (`<section aria-labelledby>`, `<article>`, `<time>`, `<address>`)
+- Semantic HTML throughout (`<section aria-label>`, `<footer>`, labelled links)
 - SEO: OpenGraph + Twitter Card meta, JSON-LD `Person` schema, sitemap, robots
-- Accessibility: skip-to-content link, ARIA labels on icon-only controls, keyboard-navigable
+- Accessibility: skip-to-content link, ARIA labels, keyboard-navigable, `prefers-reduced-motion` respected
 - Security headers + cache rules via `netlify.toml`
 - Web manifest for PWA install support
 
@@ -45,25 +45,12 @@ App runs at `http://localhost:5173`.
 
 ```
 src/
-├── App.tsx                # Layout shell
-├── main.tsx               # Entry point
-├── App.css                # Tailwind theme + CSS variables
-├── components/
-│   ├── Header.tsx         # Fixed nav with mobile menu
-│   ├── Hero.tsx           # Landing section, CTA, social links
-│   ├── Experience.tsx     # Work history
-│   ├── Projects.tsx       # Projects + Hackathons
-│   ├── Background.tsx     # Combined Skills & Education
-│   ├── Footer.tsx         # Netlify contact form + social
-│   └── ui/button.tsx      # shadcn Button
-├── lib/utils.ts           # `cn()` class merger
-└── assets/                # Images, CV PDF
+├── App.tsx     # The whole page — numbered sections, data-driven roles/projects
+├── main.tsx    # Entry point
+├── App.css     # Tailwind theme (grey palette) + fade-up animation
+└── assets/     # CV PDF
 ```
 
 ## Deployment
 
 Pushes to `main` deploy automatically via Netlify. Build config lives in `netlify.toml` (Node 20, `npm run build`, publish `dist`).
-
-## Attribution
-
-Book icon by [Smashicons via Flaticon](https://www.flaticon.com/free-icons/book).

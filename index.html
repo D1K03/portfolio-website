@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
-    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#1c1c1c" />
 
     <title>Daniel Olusakin</title>
     <meta
       name="description"
-      content="Daniel Olusakin — Final-year Computer Science student at the University of Kent. Full-stack software developer, 3x hackathon winner, building AI tooling and modern web apps."
+      content="Daniel Olusakin — Software Engineer. Junior Python Developer at CDP working on scoring automation. Computer Science graduate from the University of Kent and 4x hackathon winner."
     />
     <meta
       name="keywords"
-      content="Daniel Olusakin, software developer, full-stack developer, hackathon winner, University of Kent, React, TypeScript, AI engineer, London"
+      content="Daniel Olusakin, software engineer, Python developer, CDP, scoring automation, hackathon winner, University of Kent, React, TypeScript, London"
     />
     <meta name="author" content="Daniel Olusakin" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -31,10 +31,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Daniel Olusakin" />
     <meta property="og:url" content="https://danielolusakin.com/" />
-    <meta property="og:title" content="Daniel Olusakin — Software Developer" />
+    <meta property="og:title" content="Daniel Olusakin — Software Engineer" />
     <meta
       property="og:description"
-      content="Full-stack developer & 3x hackathon winner. Building AI tools, modern web apps, and shipping end-to-end products."
+      content="Junior Python Developer at CDP & 4x hackathon winner. Building automation, AI tools and modern web apps."
     />
     <meta property="og:image" content="https://danielolusakin.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
@@ -44,10 +44,10 @@
     <meta property="og:locale" content="en_GB" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Daniel Olusakin — Software Developer" />
+    <meta name="twitter:title" content="Daniel Olusakin — Software Engineer" />
     <meta
       name="twitter:description"
-      content="Full-stack developer & 3x hackathon winner. Building AI tools, modern web apps, and shipping end-to-end products."
+      content="Junior Python Developer at CDP & 4x hackathon winner. Building automation, AI tools and modern web apps."
     />
     <meta name="twitter:image" content="https://danielolusakin.com/og-image.png" />
     <meta name="twitter:image:alt" content="Daniel Olusakin portfolio" />
@@ -59,7 +59,12 @@
         "name": "Daniel Olusakin",
         "url": "https://danielolusakin.com",
         "image": "https://danielolusakin.com/og-image.png",
-        "jobTitle": "Software Developer",
+        "jobTitle": "Junior Python Developer",
+        "worksFor": {
+          "@type": "NGO",
+          "name": "CDP",
+          "url": "https://www.cdp.net/"
+        },
         "email": "mailto:olusakindaniel03@gmail.com",
         "knowsLanguage": "en",
         "address": {
@@ -114,17 +119,6 @@
     </a>
 
     <div id="root"></div>
-
-    <!--
-      Static form for Netlify form-detection at build time.
-      The React-rendered form posts to the same `contact` form name.
-    -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-      <input name="bot-field" />
-    </form>
 
     <script type="module" src="/src/main.tsx"></script>
   </body>
